@@ -8,7 +8,7 @@ A Helm Chart for provisioning GKE Autopilot Clusters
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| Cloud Integration Engineering | <cloud-integration-engineering@paypal.com> | <https://engineering.paypalcorp.com/confluence/display/BIO/Dewpoint+Cloud-Native+Kubernetes+Solutions> |
+| Gabriel Garoz | <gab.120gg@gmail.com> | <<>> |
 
 ## Values
 
