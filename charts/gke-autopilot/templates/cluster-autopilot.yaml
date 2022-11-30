@@ -4,6 +4,7 @@ metadata:
   annotations:
     cnrm.cloud.google.com/project-id: {{ .Values.projectId }}
   name: {{ default "autopilot-cluster" .Values.cluster.name }}
+  namespace: {{ .Values.projectId }}
 spec:
     
 spec:
