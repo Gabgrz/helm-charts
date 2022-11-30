@@ -1,0 +1,74 @@
+# -- The GCP Project ID for this cluster
+# @default -- REQUIRED
+projectId: required
+
+cluster:
+  # -- Name of this cluster
+  name: gke-standard
+  # -- Compute location (region for a regional cluster or zone for a zonal cluster)
+  location: us-central1
+
+  privateClusterConfig:
+    # -- Whether the cluster endpoint should be private
+    enablePrivateEndpoint: false
+    # -- Whether the cluster nodes should be private
+    enablePrivateNodes: true
+    # -- Enable global access to the GKE control plane's internal loab balancer.
+    masterGlobalAccessConfig:
+      enabled: true
+    # -- Immutable. The IP range in CIDR notation to use for the hosted master network.       
+    masterIpv4CidrBlock: 10.254.0.0/28
+
+  network:
+    # -- Whether the network reference managed by Config Connector. If managed, set "true".
+    isExternal: "false"
+    # -- Reference to the VPC
+    networkRef: network-regional
+    # -- Reference to the subnet
+    subnetworkRef: subnet-regional
+
+  # -- Private IP range name for pods to use, this range must already exist
+  clusterSecondaryRangeName: pods
+  # -- Private IP range name for services to use, this range must already exist
+  servicesSecondaryRangeName: services
+  
+  # -- Master authorized networks
+  masterAuthorizedNetworksConfig:
+    cidrBlock: 0.0.0.0/0
+    displayName: 'Public internet'
+
+  # -- (object) GKE add-ons configuration
+  # @default -- See each add-on default value
+  addonsConfig:
+    configConnectorConfig:
+      enabled: true
+    dnsCacheConfig:
+      enabled: true
+    gcePersistentDiskCsiDriverConfig:
+      enabled: true
+    horizontalPodAutoscaling:
+      disabled: false
+    httpLoadBalancing:
+      disabled: false
+    kalmConfig:
+      enabled: false
+    networkPolicyConfig:
+      disabled: true
+
+  verticalPodAutoscaling:
+    enabled: true
+
+nodePool:
+  # -- Name of this node pool
+  name: custom-nodepool
+  # -- Compute location (region for a regional cluster or zone for a zonal cluster)
+  location: us-central1
+  autoscaling:
+    # -- Minimum node count
+    minNodeCount: 2
+    # -- Maximum node count
+    maxNodeCount: 3
+  nodeConfig:
+    machineType: n1-standard-2
+    diskSizeGb: 100
+    diskType: pd-standard

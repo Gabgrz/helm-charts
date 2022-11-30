@@ -1,0 +1,10 @@
+apiVersion: v2
+name: gke-standard
+description: A Helm Chart for provisioning a GKE Standard Cluster
+type: application
+version: 0.1.2
+appVersion: "0.1.2"
+maintainers:
+  - email: cloud-integration-engineering@paypal.com
+    name: Cloud Integration Engineering
+    url: https://engineering.paypalcorp.com/confluence/display/BIO/Dewpoint+Cloud-Native+Kubernetes+Solutions
