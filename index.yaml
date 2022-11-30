@@ -44,6 +44,19 @@ entries:
     version: 0.1.2
   gke-standard:
   - apiVersion: v2
+    appVersion: 0.1.6
+    created: "2022-11-30T06:13:03.038010076Z"
+    description: A Helm Chart for provisioning a GKE Standard Cluster
+    digest: ac6a71cf0ef730a79f874b528316fee9bb5e3dd2883a8d8cf41b7ad201cb4777
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: gke-standard
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/gke-standard-0.1.6/gke-standard-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
     appVersion: 0.1.5
     created: "2022-11-30T05:54:00.048919482Z"
     description: A Helm Chart for provisioning a GKE Standard Cluster
