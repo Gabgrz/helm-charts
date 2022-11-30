@@ -1,4 +1,4 @@
-{{ if eq .Values.gkeHubMembership.enabled "true" }}
+{{ if eq .Values.gkeHubMembership.enabled true }}
 apiVersion: gkehub.cnrm.cloud.google.com/v1beta1
 kind: GKEHubMembership
 metadata:
