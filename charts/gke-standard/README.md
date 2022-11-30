@@ -1,6 +1,6 @@
 # gke-standard
 
-![Version: 0.2.3](https://img.shields.io/badge/Version-0.2.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.3](https://img.shields.io/badge/AppVersion-0.2.3-informational?style=flat-square)
+![Version: 0.2.4](https://img.shields.io/badge/Version-0.2.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.4](https://img.shields.io/badge/AppVersion-0.2.4-informational?style=flat-square)
 
 A Helm Chart for provisioning a GKE Standard Cluster
 
@@ -15,6 +15,11 @@ A Helm Chart for provisioning a GKE Standard Cluster
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | argocdRegistration.enabled | string | `"false"` | Whether to register the cluster to Argo CD |
+| argocdRegistration.k8sAddons.argocdProject | string | `"default"` |  |
+| argocdRegistration.k8sAddons.enabled | string | `"false"` | Whether to automatically enable K8s addo-ns after cluster creation |
+| argocdRegistration.k8sAddons.namespace | string | `"default"` |  |
+| argocdRegistration.k8sAddons.repoPath | string | `"*"` |  |
+| argocdRegistration.k8sAddons.repoUrl | string | `"required"` |  |
 | argocdRegistration.projectNumber | string | `"required"` |  |
 | cluster.addonsConfig | object | See each add-on default value | GKE add-ons configuration |
 | cluster.clusterSecondaryRangeName | string | `"pods"` | Private IP range name for pods to use, this range must already exist |

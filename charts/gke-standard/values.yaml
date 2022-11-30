@@ -85,3 +85,11 @@ argocdRegistration:
   enabled: "false"
   # -- The host Project NUMBER of the GKE Hub Fleet member. Run: gcloud projects describe PROJECT_ID --format "value(projectNumber)"
   projectNumber: required
+
+k8sAddons:
+  # -- Whether to automatically enable K8s addo-ns after cluster creation
+  enabled: "false"
+  repoUrl: required
+  repoPath: '*'
+  argocdProject: default
+  namespace: default

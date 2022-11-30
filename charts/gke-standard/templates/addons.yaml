@@ -1,0 +1,31 @@
+{{ if eq .Values.k8sAddons.enabled "true" }}
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: name: {{ default "standard-cluster-addons" .Values.cluster.name }}-addons
+  namespace: argocd
+spec:
+  generators:
+  - git:
+      repoURL: {{ .Values.k8sAddons.repoUrl }}
+      revision: HEAD
+      directories:
+      - path: {{ .Values.k8sAddons.repoPath }}
+  template:
+    metadata:
+      name: >-
+        {{ printf "{{path[0]}}" }}
+    spec:
+      project: {{ default "default" .Values.k8sAddons.argocdProject }}
+      source:
+        repoURL: https://github.paypal.com/cie-k8s-apps/xib-qa61.git
+        targetRevision: HEAD
+        path: >-
+          {{ printf "{{path}}" }}
+      destination:
+        server: https://connectgateway.googleapis.com/v1/projects/{{ .Values.argocdRegistration.projectNumber }}/locations/global/gkeMemberships/{{ default "standard-cluster" .Values.cluster.name }}
+        namespace: {{ default "default" .Values.k8sAddons.namespace }}
+      syncPolicy:
+        syncOptions:
+          - CreateNamespace=true
+{{ end }}
