@@ -41,13 +41,13 @@ cluster:
   # @default -- See each add-on default value
   addonsConfig:
     configConnectorConfig:
-      enabled: true
+      enabled: false
     dnsCacheConfig:
-      enabled: true
+      enabled: false
     gcePersistentDiskCsiDriverConfig:
-      enabled: true
+      enabled: false
     horizontalPodAutoscaling:
-      disabled: false
+      disabled: true
     httpLoadBalancing:
       disabled: false
     kalmConfig:
