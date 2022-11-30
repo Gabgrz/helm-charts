@@ -72,3 +72,10 @@ nodePool:
     machineType: n1-standard-2
     diskSizeGb: 100
     diskType: pd-standard
+
+gkeHubMembership:
+  # -- Whether to register the cluster to the GKE Hub Fleet
+  enabled: false
+  # -- The host Project ID of the GKE Hub Fleet
+  # @default -- same as projectId
+  hostProjectId: required

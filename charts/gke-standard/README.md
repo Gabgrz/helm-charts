@@ -1,6 +1,6 @@
 # gke-standard
 
-![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.3](https://img.shields.io/badge/AppVersion-0.1.3-informational?style=flat-square)
+![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.4](https://img.shields.io/badge/AppVersion-0.1.4-informational?style=flat-square)
 
 A Helm Chart for provisioning a GKE Standard Cluster
 
@@ -28,6 +28,8 @@ A Helm Chart for provisioning a GKE Standard Cluster
 | cluster.privateClusterConfig.masterIpv4CidrBlock | string | `"10.254.0.0/28"` | Immutable. The IP range in CIDR notation to use for the hosted master network.        |
 | cluster.servicesSecondaryRangeName | string | `"services"` | Private IP range name for services to use, this range must already exist |
 | cluster.verticalPodAutoscaling.enabled | bool | `true` |  |
+| gkeHubMembership.enabled | bool | `false` | Whether to register the cluster to the GKE Hub Fleet |
+| gkeHubMembership.hostProjectId | string | same as projectId | The host Project ID of the GKE Hub Fleet |
 | nodePool.autoscaling.maxNodeCount | int | `3` | Maximum node count |
 | nodePool.autoscaling.minNodeCount | int | `2` | Minimum node count |
 | nodePool.location | string | `"us-central1"` | Compute location (region for a regional cluster or zone for a zonal cluster) |
