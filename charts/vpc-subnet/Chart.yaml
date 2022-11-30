@@ -2,8 +2,8 @@ apiVersion: v2
 name: vpc-subnet
 description: A Helm Chart for provisioning a VPC with a subnet
 type: application
-version: 0.1.0
-appVersion: "0.1.0"
+version: 0.1.1
+appVersion: "0.1.1"
 maintainers:
   - email: gab.120gg@gmail.com
     name: Gabriel Garoz
