@@ -74,8 +74,8 @@ nodePool:
     diskType: pd-standard
 
 gkeHubMembership:
-  # -- (boolean) Whether to register the cluster to the GKE Hub Fleet
-  enabled: false
+  # -- Whether to register the cluster to the GKE Hub Fleet
+  enabled: "false"
   # -- The host Project ID of the GKE Hub Fleet
   # @default -- same as projectId
   hostProjectId: required
