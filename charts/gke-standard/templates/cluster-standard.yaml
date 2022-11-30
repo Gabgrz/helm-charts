@@ -75,6 +75,7 @@ metadata:
   labels:
     label-one: "value-one"
   name: {{ default "containernodepool-sample-basic" .Values.nodePool.name }}
+  namespace: {{ .Values.projectId }}  
 spec:
   location: {{ default "us-central1" .Values.nodePool.location }}
   autoscaling:
