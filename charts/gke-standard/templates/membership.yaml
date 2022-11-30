@@ -12,4 +12,5 @@ spec:
     gkeCluster:
       resourceRef:
         name: {{ default "standard-cluster" .Values.cluster.name }}
+        namespace: {{ .Values.projectId }}
 {{ end }}
