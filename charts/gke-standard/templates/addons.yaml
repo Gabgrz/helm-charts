@@ -18,7 +18,7 @@ spec:
     spec:
       project: {{ default "default" .Values.k8sAddons.argocdProject }}
       source:
-        repoURL: https://github.paypal.com/cie-k8s-apps/xib-qa61.git
+        repoURL: {{ .Values.k8sAddons.repoUrl }}
         targetRevision: HEAD
         path: >-
           {{ printf "{{path}}" }}
