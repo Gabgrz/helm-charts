@@ -4,8 +4,6 @@ kind: GKEHubMembership
 metadata:
   name: {{ default "standard-cluster" .Values.cluster.name }}
   namespace: {{ default .Values.projectId .Values.gkeHubMembership.hostProjectId }}
-  annotations:
-    cnrm.cloud.google.com/project-id: {{ default .Values.projectId .Values.gkeHubMembership.hostProjectId }}
 spec:
   location: global
   endpoint:
