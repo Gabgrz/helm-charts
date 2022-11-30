@@ -8,7 +8,7 @@ A Helm Chart for provisioning a VPC with a subnet
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| Gabriel Garoz | <gab.120gg@gmail.com> | <<>> |
+| Gabriel Garoz | <gab.120gg@gmail.com> |  |
 
 ## Values
 
