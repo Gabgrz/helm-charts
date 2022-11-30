@@ -2,6 +2,20 @@ apiVersion: v1
 entries:
   gke-autopilot:
   - apiVersion: v2
+    appVersion: 0.1.3
+    created: "2022-11-30T03:31:16.77141956Z"
+    description: A Helm Chart for provisioning GKE Autopilot Clusters
+    digest: 3eb629a096bdd9f474af9484a9c8e5621d0d38d937f9a64fa92955307e592758
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+      url: <>
+    name: gke-autopilot
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/gke-autopilot-0.1.3/gke-autopilot-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
     appVersion: 0.1.2
     created: "2022-11-29T22:11:13.646913718Z"
     description: A Helm Chart for provisioning GKE Autopilot Clusters
@@ -15,4 +29,19 @@ entries:
     urls:
     - https://github.com/Gabgrz/helm-charts/releases/download/gke-autopilot-0.1.2/gke-autopilot-0.1.2.tgz
     version: 0.1.2
+  vpc-subnet:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-11-30T03:31:16.903476754Z"
+    description: A Helm Chart for provisioning a VPC with a subnet
+    digest: 270e94e08528dafe7499595517b7695b2dabc9bcda7bc4bf674123c778042c19
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+      url: <>
+    name: vpc-subnet
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/vpc-subnet-0.1.0/vpc-subnet-0.1.0.tgz
+    version: 0.1.0
 generated: "2022-11-29T22:11:13.372262374Z"
