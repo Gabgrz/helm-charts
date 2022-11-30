@@ -1,6 +1,6 @@
 # gke-standard
 
-![Version: 0.1.8](https://img.shields.io/badge/Version-0.1.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.8](https://img.shields.io/badge/AppVersion-0.1.8-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.1](https://img.shields.io/badge/AppVersion-0.2.1-informational?style=flat-square)
 
 A Helm Chart for provisioning a GKE Standard Cluster
 
@@ -14,6 +14,8 @@ A Helm Chart for provisioning a GKE Standard Cluster
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| argocdRegistration.enabled | string | `"false"` | Whether to register the cluster to Argo CD |
+| argocdRegistration.projectNumber | string | `"required"` |  |
 | cluster.addonsConfig | object | See each add-on default value | GKE add-ons configuration |
 | cluster.clusterSecondaryRangeName | string | `"pods"` | Private IP range name for pods to use, this range must already exist |
 | cluster.location | string | `"us-central1"` | Compute location (region for a regional cluster or zone for a zonal cluster) |
