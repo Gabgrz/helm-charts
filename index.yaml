@@ -31,6 +31,20 @@ entries:
     version: 0.1.2
   vpc-subnet:
   - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2022-11-30T03:48:28.118050887Z"
+    description: A Helm Chart for provisioning a VPC with a subnet
+    digest: af4988e11ecf02e05372275526c2a60f537a180868483ebb0bda8beb2bb5f4f0
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+      url: <>
+    name: vpc-subnet
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/vpc-subnet-0.1.1/vpc-subnet-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2022-11-30T03:31:16.903476754Z"
     description: A Helm Chart for provisioning a VPC with a subnet
