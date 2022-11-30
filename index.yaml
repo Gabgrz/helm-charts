@@ -42,6 +42,21 @@ entries:
     urls:
     - https://github.com/Gabgrz/helm-charts/releases/download/gke-autopilot-0.1.2/gke-autopilot-0.1.2.tgz
     version: 0.1.2
+  gke-standard:
+  - apiVersion: v2
+    appVersion: 0.1.2
+    created: "2022-11-30T05:16:21.205297186Z"
+    description: A Helm Chart for provisioning a GKE Standard Cluster
+    digest: 0e515c5859dd96f35c6beec6ff8f37cee806f4cc5fed64ef90d4aea725ee3bbf
+    maintainers:
+    - email: cloud-integration-engineering@paypal.com
+      name: Cloud Integration Engineering
+      url: https://engineering.paypalcorp.com/confluence/display/BIO/Dewpoint+Cloud-Native+Kubernetes+Solutions
+    name: gke-standard
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/gke-standard-0.1.2/gke-standard-0.1.2.tgz
+    version: 0.1.2
   vpc-subnet:
   - apiVersion: v2
     appVersion: 0.1.2
