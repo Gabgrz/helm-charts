@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: name: {{ default "standard-cluster-addons" .Values.cluster.name }}-addons
+  name: {{ default "standard-cluster-addons" .Values.cluster.name }}-addons
   namespace: argocd
 spec:
   generators:
