@@ -14,6 +14,7 @@ A Helm Chart for provisioning a VPC with a subnet
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| projectId | string | `"REQUIRED"` |  |
 | subnet.ipCidrRange | string | `"10.2.0.0/16"` |  |
 | subnet.name | string | `"subnet-regional"` |  |
 | subnet.region | string | `"us-central1"` |  |
