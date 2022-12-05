@@ -1,5 +1,3 @@
-projectId: REQUIRED
-
 vpc:
   name: network-regional
   routingMode: REGIONAL
