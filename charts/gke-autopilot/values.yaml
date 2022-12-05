@@ -1,9 +1,3 @@
-# -- The GCP Project ID for this cluster
-# @default -- REQUIRED
-global:
-  projectId: required
-  clusterName: gke-autopilot
-  
 cluster:
   # -- The compute location (region for a regional cluster or zone for a zonal cluster)
   location: us-central1

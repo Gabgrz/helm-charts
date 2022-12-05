@@ -3,7 +3,7 @@ kind: ContainerCluster
 metadata:
   annotations:
     cnrm.cloud.google.com/project-id: {{ .Values.global.projectId }}
-  name: {{ default "autopilot-cluster" .Values.global.clusterName }}
+  name: {{ default "gke-autopilot" .Values.global.clusterName }}
   namespace: {{ .Values.global.projectId }}
 spec:
     
