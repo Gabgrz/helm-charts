@@ -1,10 +1,10 @@
 apiVersion: serviceusage.cnrm.cloud.google.com/v1beta1
 kind: Service
 metadata: 
-  name: {{ .Values.projectId }}-{{ .Values.cluster.name }}-container
-  namespace: {{ .Values.projectId }}
+  name: {{ .Values.global.projectId }}-{{ .Values.cluster.name }}-container
+  namespace: {{ .Values.global.projectId }}
   annotations:
     cnrm.cloud.google.com/deletion-policy: abandon
-    cnrm.cloud.google.com/project-id: {{ .Values.projectId}}
+    cnrm.cloud.google.com/project-id: {{ .Values.global.projectId}}
 spec:
   resourceID: container.googleapis.com
