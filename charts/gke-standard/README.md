@@ -1,6 +1,6 @@
 # gke-standard
 
-![Version: 0.3.1](https://img.shields.io/badge/Version-0.3.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.1](https://img.shields.io/badge/AppVersion-0.3.1-informational?style=flat-square)
+![Version: 0.3.3](https://img.shields.io/badge/Version-0.3.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.3](https://img.shields.io/badge/AppVersion-0.3.3-informational?style=flat-square)
 
 A Helm Chart for provisioning a GKE Standard Cluster
 
@@ -28,11 +28,6 @@ A Helm Chart for provisioning a GKE Standard Cluster
 | cluster.servicesSecondaryRangeName | string | `"services"` | Private IP range name for services to use, this range must already exist |
 | cluster.verticalPodAutoscaling.enabled | bool | `true` |  |
 | global | object | REQUIRED | The GCP Project ID for this cluster |
-| k8sAddons.argocdProject | string | `"default"` |  |
-| k8sAddons.enabled | string | `"false"` | Whether to automatically enable K8s addo-ns after cluster creation |
-| k8sAddons.namespace | string | `"default"` |  |
-| k8sAddons.repoPath | string | `"*"` |  |
-| k8sAddons.repoUrl | string | `"required"` |  |
 | nodePool.autoscaling.maxNodeCount | int | `3` | Maximum node count |
 | nodePool.autoscaling.minNodeCount | int | `2` | Minimum node count |
 | nodePool.location | string | `"us-central1"` | Compute location (region for a regional cluster or zone for a zonal cluster) |

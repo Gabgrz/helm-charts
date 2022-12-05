@@ -1,0 +1,7 @@
+k8sAddons:
+  # -- Whether to automatically enable K8s addo-ns after cluster creation
+  enabled: "false"
+  repoUrl: required
+  repoPath: '*'
+  argocdProject: default
+  namespace: default

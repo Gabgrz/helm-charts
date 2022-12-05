@@ -1,0 +1,10 @@
+apiVersion: v2
+name: k8s-addons
+description: A Helm Chart for installing k8s addons
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+maintainers:
+  - email: gab.120gg@gmail.com
+    name: Gabriel Garoz
+    url: 
