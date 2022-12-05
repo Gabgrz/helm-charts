@@ -2,9 +2,9 @@ apiVersion: container.cnrm.cloud.google.com/v1beta1
 kind: ContainerCluster
 metadata:
   annotations:
-    cnrm.cloud.google.com/project-id: {{ .Values.projectId }}
-  name: {{ default "autopilot-cluster" .Values.cluster.name }}
-  namespace: {{ .Values.projectId }}
+    cnrm.cloud.google.com/project-id: {{ .Values.global.projectId }}
+  name: {{ default "autopilot-cluster" .Values.global.clusterName }}
+  namespace: {{ .Values.global.projectId }}
 spec:
     
 spec:
@@ -88,4 +88,4 @@ spec:
 
   # Enable workload identity by default.
   workloadIdentityConfig:
-    identityNamespace: {{ .Values.projectId }}.svc.id.goog # kpt-set: ${project-id}.svc.id.goog
+    identityNamespace: {{ .Values.global.projectId }}.svc.id.goog
