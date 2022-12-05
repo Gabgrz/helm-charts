@@ -1,5 +1,19 @@
 apiVersion: v1
 entries:
+  cluster-registration:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-12-05T16:11:22.177102684Z"
+    description: A Helm Chart for registering Clusters
+    digest: bbd32b99fad2330188fe0f3c0052ce3f37e327fca89ebafd654a48d56e87bf84
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: cluster-registration
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/cluster-registration-0.1.0/cluster-registration-0.1.0.tgz
+    version: 0.1.0
   gke-autopilot:
   - apiVersion: v2
     appVersion: 0.1.4
@@ -43,6 +57,19 @@ entries:
     - https://github.com/Gabgrz/helm-charts/releases/download/gke-autopilot-0.1.2/gke-autopilot-0.1.2.tgz
     version: 0.1.2
   gke-standard:
+  - apiVersion: v2
+    appVersion: 0.2.8
+    created: "2022-12-05T16:11:22.295011969Z"
+    description: A Helm Chart for provisioning a GKE Standard Cluster
+    digest: 13d8a71bbe647533d29c2b191b55d49424b815a5e1cf458c612e2b30bbfe3a75
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: gke-standard
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/gke-standard-0.2.8/gke-standard-0.2.8.tgz
+    version: 0.2.8
   - apiVersion: v2
     appVersion: 0.2.7
     created: "2022-11-30T16:29:42.544166304Z"
