@@ -2,14 +2,14 @@
 apiVersion: v1
 kind: Secret
 metadata:
-  name: {{ default "standard-cluster" .Values.cluster.name }}
+  name: {{ default "standard-cluster" .Values.global.clusterName }}
   namespace: argocd
   labels:
     argocd.argoproj.io/secret-type: cluster
 type: Opaque
 stringData:
-  name: {{ default "standard-cluster" .Values.cluster.name }}
-  server: https://connectgateway.googleapis.com/v1/projects/{{ .Values.argocdRegistration.projectNumber }}/locations/global/gkeMemberships/{{ default "standard-cluster" .Values.cluster.name }}
+  name: {{ default "standard-cluster" .Values.global.clusterName }}
+  server: https://connectgateway.googleapis.com/v1/projects/{{ .Values.argocdRegistration.projectNumber }}/locations/global/gkeMemberships/{{ default "standard-cluster" .Values.global.clusterName }}
   config: |
     {
       "execProviderConfig": {

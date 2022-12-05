@@ -1,10 +1,10 @@
 # -- The GCP Project ID for this cluster
 # @default -- REQUIRED
-projectId: required
+global:
+  projectId: required
+  clusterName: gke-standard
 
 cluster:
-  # -- Name of this cluster
-  name: gke-standard
   # -- Compute location (region for a regional cluster or zone for a zonal cluster)
   location: us-central1
 
@@ -72,19 +72,6 @@ nodePool:
     machineType: n1-standard-2
     diskSizeGb: 100
     diskType: pd-standard
-
-gkeHubMembership:
-  # -- Whether to register the cluster to the GKE Hub Fleet
-  enabled: "false"
-  # -- The host Project ID of the GKE Hub Fleet
-  # @default -- same as projectId
-  hostProjectId: required
-
-argocdRegistration:
-  # -- Whether to register the cluster to Argo CD
-  enabled: "false"
-  # -- The host Project NUMBER of the GKE Hub Fleet member. Run: gcloud projects describe PROJECT_ID --format "value(projectNumber)"
-  projectNumber: required
 
 k8sAddons:
   # -- Whether to automatically enable K8s addo-ns after cluster creation

@@ -1,0 +1,14 @@
+{{ if eq .Values.gkeHubMembership.enabled "true" }}
+apiVersion: gkehub.cnrm.cloud.google.com/v1beta1
+kind: GKEHubMembership
+metadata:
+  name: {{ default "standard-cluster" .Values.global.clusterName }}
+  namespace: {{ default .Values.global.projectId .Values.gkeHubMembership.hostProjectId }}
+spec:
+  location: global
+  endpoint:
+    gkeCluster:
+      resourceRef:
+        name: {{ default "standard-cluster" .Values.global.clusterName }}
+        namespace: {{ .Values.global.projectId }}
+{{ end }}
