@@ -4,7 +4,7 @@ metadata:
   annotations:
     cnrm.cloud.google.com/remove-default-node-pool: "true"
     cnrm.cloud.google.com/project-id: {{ .Values.projectId }}
-  name: {{ default "standard-cluster" .Values.cluster.name }}
+  name: {{ default "standard-cluster" .Values.global.clusterName }}
   namespace: {{ .Values.projectId }}
 spec:
   location: {{ default "us-central1" .Values.cluster.location }}
@@ -98,5 +98,5 @@ spec:
     autoRepair: true
     autoUpgrade: true
   clusterRef:
-    name: {{ default "standard-cluster" .Values.cluster.name }}
+    name: {{ default "standard-cluster" .Values.global.clusterName }}
 ---
