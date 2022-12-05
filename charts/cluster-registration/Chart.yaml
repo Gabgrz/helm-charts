@@ -2,7 +2,7 @@ apiVersion: v2
 name: cluster-registration
 description: A Helm Chart for registering Clusters
 type: application
-version: 0.1.1
+version: 0.1.2
 appVersion: "0.1.2"
 maintainers:
   - email: gab.120gg@gmail.com
