@@ -1,12 +1,7 @@
 gkeHubMembership:
   # -- Whether to register the cluster to the GKE Hub Fleet
   enabled: "false"
-  # -- The host Project ID of the GKE Hub Fleet
-  # @default -- same as projectId
-  hostProjectId: required
 
 argocdRegistration:
   # -- Whether to register the cluster to Argo CD
   enabled: "false"
-  # -- The host Project NUMBER of the GKE Hub Fleet member. Run: gcloud projects describe PROJECT_ID --format "value(projectNumber)"
-  projectNumber: required
