@@ -2,7 +2,7 @@
 # @default -- REQUIRED
 global:
   projectId: required
-  clusterName: gke-standard
+  clusterName: gke-autopilot
   
 cluster:
   # -- The compute location (region for a regional cluster or zone for a zonal cluster)
