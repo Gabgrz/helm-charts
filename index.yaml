@@ -42,6 +42,19 @@ entries:
     version: 0.1.0
   gke-autopilot:
   - apiVersion: v2
+    appVersion: 0.1.8
+    created: "2022-12-05T18:35:07.416803068Z"
+    description: A Helm Chart for provisioning GKE Autopilot Clusters
+    digest: 4681128a8db817037ed65c30354c0de0d1a5832dc19f195c5a3d929aab3aeb37
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: gke-autopilot
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/gke-autopilot-0.1.8/gke-autopilot-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
     appVersion: 0.1.7
     created: "2022-12-05T18:29:09.395104707Z"
     description: A Helm Chart for provisioning GKE Autopilot Clusters
