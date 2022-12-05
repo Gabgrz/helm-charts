@@ -3,7 +3,7 @@ name: cluster-registration
 description: A Helm Chart for registering Clusters
 type: application
 version: 0.1.1
-appVersion: "0.1.1"
+appVersion: "0.1.2"
 maintainers:
   - email: gab.120gg@gmail.com
     name: Gabriel Garoz

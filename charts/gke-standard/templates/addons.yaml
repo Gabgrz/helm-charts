@@ -23,7 +23,7 @@ spec:
         path: >-
           {{ printf "{{path}}" }}
       destination:
-        server: https://connectgateway.googleapis.com/v1/projects/{{ .Values.global.projectNumber }}/locations/global/gkeMemberships/{{ default "standard-cluster" .Values.global.clusterName }}
+        server: https://connectgateway.googleapis.com/v1/projects/{{ .Values.global.hostProjectNumber }}/locations/global/gkeMemberships/{{ default "standard-cluster" .Values.global.clusterName }}
         namespace: {{ default "default" .Values.k8sAddons.namespace }}
       syncPolicy:
         syncOptions:

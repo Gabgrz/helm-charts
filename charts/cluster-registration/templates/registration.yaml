@@ -9,7 +9,7 @@ metadata:
 type: Opaque
 stringData:
   name: {{ default "standard-cluster" .Values.global.clusterName }}
-  server: https://connectgateway.googleapis.com/v1/projects/{{ .Values.global.projectNumber }}/locations/global/gkeMemberships/{{ default "standard-cluster" .Values.global.clusterName }}
+  server: https://connectgateway.googleapis.com/v1/projects/{{ .Values.global.hostProjectNumber }}/locations/global/gkeMemberships/{{ default "standard-cluster" .Values.global.clusterName }}
   config: |
     {
       "execProviderConfig": {
