@@ -2,8 +2,8 @@ apiVersion: v2
 name: gke-nodepool
 description: A Helm Chart for provisioning GKE Node Pools
 type: application
-version: 0.1.0
-appVersion: "0.1.0"
+version: 0.1.1
+appVersion: "0.1.1"
 maintainers:
   - email: gab.120gg@gmail.com
     name: Gabriel Garoz
