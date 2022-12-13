@@ -2,8 +2,8 @@ apiVersion: v2
 name: gke-standard
 description: A Helm Chart for provisioning a GKE Standard Cluster
 type: application
-version: 0.3.3
-appVersion: "0.3.3"
+version: 0.3.4
+appVersion: "0.3.4"
 maintainers:
   - email: gab.120gg@gmail.com
     name: Gabriel Garoz

@@ -57,18 +57,3 @@ cluster:
 
   verticalPodAutoscaling:
     enabled: true
-
-nodePool:
-  # -- Name of this node pool
-  name: custom-nodepool
-  # -- Compute location (region for a regional cluster or zone for a zonal cluster)
-  location: us-central1
-  autoscaling:
-    # -- Minimum node count
-    minNodeCount: 2
-    # -- Maximum node count
-    maxNodeCount: 3
-  nodeConfig:
-    machineType: n1-standard-2
-    diskSizeGb: 100
-    diskType: pd-standard
