@@ -134,6 +134,20 @@ entries:
     urls:
     - https://github.com/Gabgrz/helm-charts/releases/download/gke-autopilot-0.1.2/gke-autopilot-0.1.2.tgz
     version: 0.1.2
+  gke-nodepool:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-12-13T15:54:26.752885805Z"
+    description: A Helm Chart for provisioning GKE Node Pools
+    digest: f4a67c491ff3bb0e7c2e2ed04bb92a3347ecf34417125d35d383ec2a9891362e
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: gke-nodepool
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/gke-nodepool-0.1.0/gke-nodepool-0.1.0.tgz
+    version: 0.1.0
   gke-standard:
   - apiVersion: v2
     appVersion: 0.3.3
