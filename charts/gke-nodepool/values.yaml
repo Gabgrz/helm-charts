@@ -9,6 +9,9 @@ nodePool:
     # -- Maximum node count
     maxNodeCount: 3
   nodeConfig:
+    # -- Machine type
     machineType: n1-standard-2
+    # -- Disk Size in GB
     diskSizeGb: 100
+    # -- Disk type
     diskType: pd-standard
