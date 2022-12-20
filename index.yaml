@@ -42,6 +42,19 @@ entries:
     version: 0.1.0
   gke-autopilot:
   - apiVersion: v2
+    appVersion: 0.1.9
+    created: "2022-12-20T19:16:11.751826331Z"
+    description: A Helm Chart for provisioning GKE Autopilot Clusters
+    digest: b68d47c8313e4358b1a888db3a7afd0d94fda09c55ede6603da8d151ce769045
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: gke-autopilot
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/gke-autopilot-0.1.9/gke-autopilot-0.1.9.tgz
+    version: 0.1.9
+  - apiVersion: v2
     appVersion: 0.1.8
     created: "2022-12-05T18:35:07.416803068Z"
     description: A Helm Chart for provisioning GKE Autopilot Clusters
@@ -175,6 +188,19 @@ entries:
     - https://github.com/Gabgrz/helm-charts/releases/download/gke-nodepool-0.1.0/gke-nodepool-0.1.0.tgz
     version: 0.1.0
   gke-standard:
+  - apiVersion: v2
+    appVersion: 0.3.5
+    created: "2022-12-20T19:16:11.991092947Z"
+    description: A Helm Chart for provisioning a GKE Standard Cluster
+    digest: 1391261c1c7ac5c334d59d12c6eb1edfe824d96150ff04a04cbb7cebd8fd8191
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: gke-standard
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/gke-standard-0.3.5/gke-standard-0.3.5.tgz
+    version: 0.3.5
   - apiVersion: v2
     appVersion: 0.3.4
     created: "2022-12-13T16:16:03.54684585Z"
@@ -517,6 +543,19 @@ entries:
     - https://github.com/Gabgrz/helm-charts/releases/download/services-0.1.1/services-0.1.1.tgz
     version: 0.1.1
   vpc-subnet:
+  - apiVersion: v2
+    appVersion: 0.1.4
+    created: "2022-12-20T19:16:12.210153419Z"
+    description: A Helm Chart for provisioning a VPC with a subnet
+    digest: bbe1041ec03c9db2f24a31757f6f24d1769dae7044d47a2d96e5f63a8a54a1f0
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: vpc-subnet
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/vpc-subnet-0.1.4/vpc-subnet-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.3
     created: "2022-12-05T18:18:27.712951404Z"
