@@ -478,6 +478,19 @@ entries:
     version: 0.1.0
   services:
   - apiVersion: v2
+    appVersion: 0.1.2
+    created: "2022-12-20T18:54:38.345434318Z"
+    description: A Helm Chart for enabling API services
+    digest: 8ef6aeb3ae2693c18829ca8244d970d232b0b0397b57100974e047ee8a98c5b5
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: services
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/services-0.1.2/services-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 0.1.1
     created: "2022-12-20T18:41:45.243972728Z"
     description: A Helm Chart for enabling API services
