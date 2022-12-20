@@ -2,8 +2,8 @@ apiVersion: v2
 name: gke-autopilot
 description: A Helm Chart for provisioning GKE Autopilot Clusters
 type: application
-version: 0.1.8
-appVersion: "0.1.8"
+version: 0.1.9
+appVersion: "0.1.9"
 maintainers:
   - email: gab.120gg@gmail.com
     name: Gabriel Garoz
