@@ -1,9 +1,9 @@
 apiVersion: v2
-name: apis
+name: services
 description: A Helm Chart for enabling API services
 type: application
-version: 0.1.0
-appVersion: "0.1.0"
+version: 0.1.1
+appVersion: "0.1.1"
 maintainers:
   - email: gab.120gg@gmail.com
     name: Gabriel Garoz
