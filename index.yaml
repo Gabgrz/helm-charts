@@ -476,6 +476,20 @@ entries:
     urls:
     - https://github.com/Gabgrz/helm-charts/releases/download/k8s-addons-0.1.0/k8s-addons-0.1.0.tgz
     version: 0.1.0
+  services:
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2022-12-20T18:41:45.243972728Z"
+    description: A Helm Chart for enabling API services
+    digest: e1b87366569c4fceaa68ed065830c1b4f15690d91c9fb28b4f5bb7d229d8e815
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: services
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/services-0.1.1/services-0.1.1.tgz
+    version: 0.1.1
   vpc-subnet:
   - apiVersion: v2
     appVersion: 0.1.3
