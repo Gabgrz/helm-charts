@@ -40,6 +40,20 @@ entries:
     urls:
     - https://github.com/Gabgrz/helm-charts/releases/download/cluster-registration-0.1.0/cluster-registration-0.1.0.tgz
     version: 0.1.0
+  gcp-service-accounts:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-12-28T00:34:29.262849128Z"
+    description: A Helm Chart for creating GCP service accounts and assigning roles
+    digest: c0461c4b25d932027b149e952d4c6dfa2cd7496e2f2782b7dc2751005652d2ca
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: gcp-service-accounts
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/gcp-service-accounts-0.1.1/gcp-service-accounts-0.1.1.tgz
+    version: 0.1.1
   gke-autopilot:
   - apiVersion: v2
     appVersion: 0.1.9
