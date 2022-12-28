@@ -1,0 +1,14 @@
+# -- Map of all service accounts
+# @default -- REQUIRED
+serviceAccounts:
+  name:
+    # -- Whether to create the service account or if it already exists
+    create: false
+    # -- Service account Display name
+    displayName: Example service account
+    # -- List of roles at Project level
+    projectRoles: 
+      -
+    # -- List of roles at Folder level    
+    folderRoles:
+      -
