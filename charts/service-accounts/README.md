@@ -1,6 +1,6 @@
 # gcp-service-accounts
 
-![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.3](https://img.shields.io/badge/AppVersion-0.1.3-informational?style=flat-square)
+![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.4](https://img.shields.io/badge/AppVersion-0.1.4-informational?style=flat-square)
 
 A Helm Chart for creating GCP service accounts and assigning roles
 
@@ -15,10 +15,10 @@ A Helm Chart for creating GCP service accounts and assigning roles
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | serviceAccounts | object | REQUIRED | Map of all service accounts |
-| serviceAccounts.name.create | bool | `false` | Whether to create the service account or if it already exists |
+| serviceAccounts.name.create | bool | `true` | Whether to create the service account or if it already exists |
 | serviceAccounts.name.displayName | string | `"Example service account"` | Service account Display name |
-| serviceAccounts.name.folderRoles | list | `[null]` | List of roles at Folder level     |
-| serviceAccounts.name.projectRoles | list | `[null]` | List of roles at Project level |
+| serviceAccounts.name.folderRoles | string | `nil` | List of roles at Folder level     |
+| serviceAccounts.name.projectRoles | string | `nil` | List of roles at Project level |
 
 ## Example usage
 ```Chart.yaml```

@@ -2,8 +2,8 @@ apiVersion: v2
 name: gcp-service-accounts
 description: A Helm Chart for creating GCP service accounts and assigning roles
 type: application
-version: 0.1.3
-appVersion: "0.1.3"
+version: 0.1.4
+appVersion: "0.1.4"
 maintainers:
   - email: gab.120gg@gmail.com
     name: Gabriel Garoz
