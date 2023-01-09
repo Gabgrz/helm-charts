@@ -42,6 +42,19 @@ entries:
     version: 0.1.0
   gcp-service-accounts:
   - apiVersion: v2
+    appVersion: 0.1.6
+    created: "2023-01-09T20:45:36.011459974Z"
+    description: A Helm Chart for creating GCP service accounts and assigning roles
+    digest: 64df570a7f3d45e1d7664cef0e26d29a8a43ae730a381493d399f9be285a9d23
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: gcp-service-accounts
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/gcp-service-accounts-0.1.6/gcp-service-accounts-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
     appVersion: 0.1.5
     created: "2023-01-09T20:37:30.201790308Z"
     description: A Helm Chart for creating GCP service accounts and assigning roles
