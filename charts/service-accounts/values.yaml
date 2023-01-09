@@ -7,7 +7,7 @@ serviceAccounts:
     # -- Service account Display name
     displayName: Example service account
     # -- List of roles at Project level
-    projectRoles: 
+    projectRoles:
       -
     # -- List of roles at Folder level    
     folderRoles:
