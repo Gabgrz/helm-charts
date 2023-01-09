@@ -1,0 +1,10 @@
+apiVersion: v2
+name: gcs-bucket
+description: A Helm Chart for provisioning Cloud Storage buckets
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+maintainers:
+  - email: gab.120gg@gmail.com
+    name: Gabriel Garoz
+    url: 
