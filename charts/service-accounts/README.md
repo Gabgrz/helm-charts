@@ -10,12 +10,6 @@ A Helm Chart for creating GCP service accounts and assigning roles
 | ---- | ------ | --- |
 | Gabriel Garoz | <gab.120gg@gmail.com> |  |
 
-## Values
-
-| Key | Type | Default | Description |
-|-----|------|---------|-------------|
-| serviceAccounts | string | REQUIRED | Map of all service accounts |
-
 ## Example usage
 ```Chart.yaml```
 ```yaml
