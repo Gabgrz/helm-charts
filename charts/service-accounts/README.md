@@ -1,6 +1,6 @@
-# gcp-service-accounts
+# iam-service-account
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.5](https://img.shields.io/badge/AppVersion-0.1.5-informational?style=flat-square)
+![Version: 0.1.9](https://img.shields.io/badge/Version-0.1.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.9](https://img.shields.io/badge/AppVersion-0.1.9-informational?style=flat-square)
 
 A Helm Chart for creating GCP service accounts and assigning roles
 
@@ -9,6 +9,14 @@ A Helm Chart for creating GCP service accounts and assigning roles
 | Name | Email | Url |
 | ---- | ------ | --- |
 | Gabriel Garoz | <gab.120gg@gmail.com> |  |
+
+## Values
+
+| Key | Type | Default | Description |
+|-----|------|---------|-------------|
+| global.folderId | string | `nil` |  |
+| global.projectId | string | `nil` |  |
+| principals | string | `nil` |  |
 
 ## Example usage
 ```Chart.yaml```
