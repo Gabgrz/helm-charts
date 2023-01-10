@@ -583,6 +583,19 @@ entries:
     version: 0.1.2
   iam-service-account:
   - apiVersion: v2
+    appVersion: 0.1.9
+    created: "2023-01-10T05:28:37.645860512Z"
+    description: A Helm Chart for creating GCP service accounts and assigning roles
+    digest: 7045a7f03bed1f2ca7e63db863161cddc8cecd8caaec771f4ed3bd6e1ec86387
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: iam-service-account
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/iam-service-account-0.1.9/iam-service-account-0.1.9.tgz
+    version: 0.1.9
+  - apiVersion: v2
     appVersion: 0.1.8
     created: "2023-01-10T04:51:05.517361745Z"
     description: A Helm Chart for creating GCP service accounts and assigning roles
