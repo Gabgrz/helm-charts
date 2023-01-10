@@ -4,7 +4,7 @@
 apiVersion: iam.cnrm.cloud.google.com/v1beta1
 kind: IAMPolicyMember
 metadata:
-  name: {{ $sa }}-role-{{ regexFind "[^.]+$" (quote $role | lower) }}
+  name: {{ $sa }}-role-{{ regexFind "[^.]+$" ($role | lower) }}
   namespace: {{ $.Values.global.projectId }}
 spec:
   member: serviceAccount:{{ $sa }}@{{ $.Values.global.projectId }}.iam.gserviceaccount.com
