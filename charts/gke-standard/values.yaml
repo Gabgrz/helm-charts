@@ -57,3 +57,6 @@ cluster:
 
   verticalPodAutoscaling:
     enabled: true
+
+  # -- (boolean) Whether Intra-node visibility is enabled for this cluster. 
+  enableIntranodeVisibility: false

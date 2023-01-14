@@ -67,3 +67,4 @@ spec:
     enabled: true
   workloadIdentityConfig:
     workloadPool: {{ .Values.global.projectId }}.svc.id.goog
+  enableIntranodeVisibility: {{ default false .Values.cluster.enableIntranodeVisibility }}
