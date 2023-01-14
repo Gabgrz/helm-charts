@@ -8,7 +8,7 @@ A Helm Chart for creating GCP service accounts and assigning roles
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| Cloud Integration Engineering | <cloud-integration-engineering@paypal.com> | <https://engineering.paypalcorp.com/confluence/display/BIO/Dewpoint+Cloud-Native+Kubernetes+Solutions> |
+| Gabriel Garoz | <gab.120gg@gmail.com> |  |
 
 ## Values
 
@@ -29,7 +29,7 @@ version: 1.0.0
 dependencies:
   - name: iam-service-account
     version: "0.2.0"
-    repository: "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/paypal-helm/"
+    repository: ""
 ```
 **Service account *without* roles assignment**
 
