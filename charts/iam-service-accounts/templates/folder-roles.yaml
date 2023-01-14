@@ -1,0 +1,17 @@
+{{- range $sa, $value := .Values.principals }}
+{{- range $folderRoles, $role := $value.folderRoles }}
+---
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMPolicyMember
+metadata:
+  name: {{ $sa }}-role-{{ regexFind "[^.]+$" ($role | lower) }}
+  namespace: {{ $.Values.global.projectId }}
+spec:
+  member: serviceAccount:{{ $sa }}@{{ $.Values.global.projectId }}.iam.gserviceaccount.com
+  role: roles/{{ $role }}
+  resourceRef:
+    apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
+    kind: Folder
+    external: folders/{{ $.Values.global.folderId }}
+{{- end }}    
+{{- end }}

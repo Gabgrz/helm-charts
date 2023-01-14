@@ -1,0 +1,62 @@
+{{ template "chart.header" . }}
+{{ template "chart.deprecationWarning" . }}
+
+{{ template "chart.badgesSection" . }}
+
+{{ template "chart.description" . }}
+
+{{ template "chart.homepageLine" . }}
+
+{{ template "chart.maintainersSection" . }}
+
+{{ template "chart.sourcesSection" . }}
+
+{{ template "chart.requirementsSection" . }}
+
+{{ template "chart.valuesSection" . }}
+
+## Example usage
+```Chart.yaml```
+```yaml
+apiVersion: v2
+name: my-service-account
+type: application
+version: 1.0.0
+ 
+dependencies:
+  - name: iam-service-account
+    version: "0.2.0"
+    repository: "https://artifactory.g.devqa.gcp.dev.paypalinc.com/artifactory/paypal-helm/"
+```
+**Service account *without* roles assignment**
+
+```values.yaml```
+```yaml
+global:
+  projectId: my-project-123
+
+principals:
+  test-service-account:
+    create: true
+    displayName: Test service account
+```
+**Service accounts *with* roles assignment**
+
+```values.yaml```
+```yaml
+global:
+  projectId: my-project-123
+
+principals:
+  argocd:
+    create: true
+    displayName: Argo CD service account
+    projectRoles:
+      - container.developer
+      - gkehub.gatewayReader
+  admin:
+    create: true
+    displayName: Admin editor service account
+    projectRoles:
+      - editor
+```

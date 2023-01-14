@@ -1,0 +1,8 @@
+global:
+  # -- (string; required) GCP Project ID to create service accounts in
+  projectId:
+  # -- (string; optional) Folder ID where service account has permissions over
+  folderId:
+
+# -- (map; required) Map of principals with optional roles assigned
+principals:
