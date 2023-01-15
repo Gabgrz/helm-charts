@@ -24,7 +24,7 @@ spec:
     metadata:
       disable-legacy-endpoints: "true"
     bootDiskKMSCryptoKeyRef:
-      external: {{ default "" .Values.nodepool.nodeConfig.bootDiskKMSCryptoKeyRef }}
+      external: {{ default "" .Values.nodePool.nodeConfig.bootDiskKMSCryptoKeyRef }}
   management:
     autoRepair: true
     autoUpgrade: true
