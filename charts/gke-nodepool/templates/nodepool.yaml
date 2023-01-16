@@ -4,16 +4,22 @@ metadata:
   labels:
     label-one: "value-one"
   name: {{ default "containernodepool-sample-basic" .Values.nodePool.name }}
-  namespace: {{ .Values.global.projectId }}  
+  namespace: {{ .Values.global.projectId }}
 spec:
   location: {{ default "us-central1" .Values.nodePool.location }}
   autoscaling:
     minNodeCount: {{ default 1 .Values.nodePool.minNodeCount }}
     maxNodeCount: {{ default 3 .Values.nodePool.maxNodeCount }}
   nodeConfig:
-    machineType: {{ default "n1-standard-1" .Values.nodePool.machineType }}
-    diskSizeGb: {{ default "100" .Values.nodePool.diskSizeGb }}
-    diskType: {{ default "pd-standard" .Values.nodePool.diskType }}
+    machineType: {{ default "n1-standard-1" .Values.nodePool.nodeConfig.machineType }}
+    diskSizeGb: {{ default "100" .Values.nodePool.nodeConfig.diskSizeGb }}
+    diskType: {{ default "pd-standard" .Values.nodePool.nodeConfig.diskType }}
+    shieldedInstanceConfig:
+      enableSecureBoot: {{ default false .Values.nodePool.nodeConfig.enableSecureBoot }}
+      enableIntegrityMonitoring: {{ default false .Values.nodePool.nodeConfig.enableIntegrityMonitoring }}
+    serviceAccountRef:
+      external: projects/{{ .Values.global.projectId }}/serviceAccounts/{{ .Values.nodePool.nodeConfig.serviceAccountRef }}
+      
     tags:
       - tagone
       - tagtwo
