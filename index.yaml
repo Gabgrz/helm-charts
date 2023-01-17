@@ -242,6 +242,19 @@ entries:
     version: 0.1.2
   gke-nodepool:
   - apiVersion: v2
+    appVersion: 0.1.7
+    created: "2023-01-17T03:27:46.189351014Z"
+    description: A Helm Chart for provisioning GKE Node Pools
+    digest: 0518e8ea2349e7608cf2197b81715bb0e395824395633c77d6bed1ab87c4ca85
+    maintainers:
+    - email: gab.120gg@gmail.com
+      name: Gabriel Garoz
+    name: gke-nodepool
+    type: application
+    urls:
+    - https://github.com/Gabgrz/helm-charts/releases/download/gke-nodepool-0.1.7/gke-nodepool-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
     appVersion: 0.1.6
     created: "2023-01-17T02:46:11.921751299Z"
     description: A Helm Chart for provisioning GKE Node Pools
