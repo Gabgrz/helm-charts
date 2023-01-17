@@ -63,8 +63,7 @@ spec:
 
   verticalPodAutoscaling:
     enabled: true
-  identityServiceConfig:
-    enabled: true
   workloadIdentityConfig:
     workloadPool: {{ .Values.global.projectId }}.svc.id.goog
   enableIntranodeVisibility: {{ default false .Values.cluster.enableIntranodeVisibility }}
+  enableBinaryAuthorization: {{ default false .Values.cluster.enableBinaryAuthorization }}
