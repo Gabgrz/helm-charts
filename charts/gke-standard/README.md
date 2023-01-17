@@ -1,6 +1,6 @@
 # gke-standard
 
-![Version: 0.3.7](https://img.shields.io/badge/Version-0.3.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.7](https://img.shields.io/badge/AppVersion-0.3.7-informational?style=flat-square)
+![Version: 0.3.8](https://img.shields.io/badge/Version-0.3.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.3.8](https://img.shields.io/badge/AppVersion-0.3.8-informational?style=flat-square)
 
 A Helm Chart for provisioning a GKE Standard Cluster
 
@@ -16,6 +16,7 @@ A Helm Chart for provisioning a GKE Standard Cluster
 |-----|------|---------|-------------|
 | cluster.addonsConfig | object | See each add-on default value | GKE add-ons configuration |
 | cluster.clusterSecondaryRangeName | string | `"pods"` | Private IP range name for pods to use, this range must already exist |
+| cluster.enableBinaryAuthorization | boolean | `false` | Whether to enable Binary Authorization |
 | cluster.enableIntranodeVisibility | boolean | `false` | Whether Intra-node visibility is enabled for this cluster.  |
 | cluster.location | string | `"us-central1"` | Compute location (region for a regional cluster or zone for a zonal cluster) |
 | cluster.masterAuthorizedNetworksConfig | object | `{"cidrBlock":"0.0.0.0/0","displayName":"Public internet"}` | Master authorized networks |

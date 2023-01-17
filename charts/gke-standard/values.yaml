@@ -60,3 +60,5 @@ cluster:
 
   # -- (boolean) Whether Intra-node visibility is enabled for this cluster. 
   enableIntranodeVisibility: false
+  # -- (boolean) Whether to enable Binary Authorization
+  enableBinaryAuthorization: false
