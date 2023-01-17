@@ -15,7 +15,6 @@ nodePool:
     diskSizeGb: 100
     # -- Disk type
     diskType: pd-standard
-    shieldedInstanceConfig:
-      enableSecureBoot: false
-      enableIntegrityMonitoring: false
-    serviceAccountRef: folder-admin@nth-subset-372600.iam.gserviceaccount.com
+    enableSecureBoot: false
+    enableIntegrityMonitoring: false
+    serviceAccountRef: ""

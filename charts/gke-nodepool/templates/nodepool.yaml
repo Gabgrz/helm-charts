@@ -18,7 +18,7 @@ spec:
       enableSecureBoot: {{ default false .Values.nodePool.nodeConfig.enableSecureBoot }}
       enableIntegrityMonitoring: {{ default false .Values.nodePool.nodeConfig.enableIntegrityMonitoring }}
     serviceAccountRef:
-      external: projects/{{ .Values.global.projectId }}/serviceAccounts/{{ .Values.nodePool.nodeConfig.serviceAccountRef }}
+      external: {{ .Values.nodePool.nodeConfig.serviceAccountRef }}
       
     tags:
       - tagone
