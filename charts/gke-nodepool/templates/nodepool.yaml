@@ -20,9 +20,7 @@ spec:
     serviceAccountRef:
       external: {{ .Values.nodePool.nodeConfig.serviceAccountRef }}
       
-    tags:
-      - tagone
-      - tagtwo
+    tags: {{ .Values.nodePool.nodeConfig.tags }}
     preemptible: false
     oauthScopes:
       - "https://www.googleapis.com/auth/logging.write"
