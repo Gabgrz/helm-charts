@@ -20,7 +20,9 @@ spec:
     serviceAccountRef:
       external: {{ .Values.nodePool.nodeConfig.serviceAccountRef }}
     tags: 
-      {{ toYaml .Values.nodePool.nodeConfig.tags | indent 10 }}
+      {{- range .Values.nodePool.nodeConfig.tags }}
+      - {{ . }}
+      {{- end }}
     preemptible: false
     oauthScopes:
       - "https://www.googleapis.com/auth/logging.write"

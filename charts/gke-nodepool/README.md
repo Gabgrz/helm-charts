@@ -1,6 +1,6 @@
 # gke-nodepool
 
-![Version: 0.1.9](https://img.shields.io/badge/Version-0.1.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.9](https://img.shields.io/badge/AppVersion-0.1.9-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.1](https://img.shields.io/badge/AppVersion-0.2.1-informational?style=flat-square)
 
 A Helm Chart for provisioning GKE Node Pools
 
@@ -14,6 +14,8 @@ A Helm Chart for provisioning GKE Node Pools
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| global.clusterName | string | `"gke-cluster-dev"` |  |
+| global.projectId | string | `"apples-123"` |  |
 | nodePool.autoscaling.maxNodeCount | int | `3` | Maximum node count |
 | nodePool.autoscaling.minNodeCount | int | `2` | Minimum node count |
 | nodePool.location | string | `"us-central1"` | Compute location (region for a regional cluster or zone for a zonal cluster) |
