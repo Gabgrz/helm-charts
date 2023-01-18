@@ -18,3 +18,4 @@ nodePool:
     enableSecureBoot: false
     enableIntegrityMonitoring: false
     serviceAccountRef: ""
+    tags:
