@@ -19,8 +19,8 @@ spec:
       enableIntegrityMonitoring: {{ default false .Values.nodePool.nodeConfig.enableIntegrityMonitoring }}
     serviceAccountRef:
       external: {{ .Values.nodePool.nodeConfig.serviceAccountRef }}
-      
-    tags: {{ .Values.nodePool.nodeConfig.tags }}
+    tags: 
+      {{ toYaml .Values.nodePool.nodeConfig.tags | ident 10 }}
     preemptible: false
     oauthScopes:
       - "https://www.googleapis.com/auth/logging.write"
