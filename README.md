@@ -1,6 +1,14 @@
 # Helm Charts
 
-A collection of Helm charts for Google Cloud Platform (GCP) infrastructure provisioning and management.
+A collection of Helm charts that configure Kubernetes Config Connector (KCC) resources for Google Cloud Platform (GCP) infrastructure provisioning and management.
+
+These charts deploy Kubernetes Custom Resource Definitions (CRDs) that enable you to manage GCP resources declaratively through Kubernetes manifests, leveraging Config Connector to automatically provision and manage your cloud infrastructure.
+
+## Prerequisites
+
+- Kubernetes cluster with Config Connector installed
+- Proper GCP service account credentials configured
+- Required GCP APIs enabled
 
 ## Available Charts
 
@@ -27,4 +35,4 @@ helm install <chart-name> ./charts/<chart-name>
 
 ## Maintainer
 
-Gabriel Garoz - gab.120gg@gmail.com
+Gabriel Garoz
